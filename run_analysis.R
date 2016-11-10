@@ -77,6 +77,6 @@ tidy_data[4] <- list(NULL)
 ## Renaming first two columns to be subject and activity label in the tidy data
 colnames(tidy_data)[1:2] <- c("subject", "activity_label")
 View(tidy_data)
-write.csv(tidy_data, "./tidy_data.csv")
+write.table(tidy_data, "./tidy_data.txt")
 
 
